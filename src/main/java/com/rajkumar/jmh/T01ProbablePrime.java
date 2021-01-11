@@ -38,10 +38,10 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @State(Scope.Benchmark)
 public class T01ProbablePrime {
     
-    @Param({ "10", "100" })
+    @Param({ "64", "128" })
     private static int BIT_LENGTH = 5; // NOSONAR
     
-    @Param({ "64", "128" })
+    @Param({ "10", "100" })
     private static int N_ITERATIONS = 10; // NOSONAR
     
     @Benchmark
